@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "小马小程序一游",
+    "usingComponents": {
+      "Mytitle":"../../components/Mytitle/Mytitle"
+    }
+}

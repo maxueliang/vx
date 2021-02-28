@@ -1,0 +1,28 @@
+<view class="main">
+  <Mytitle></Mytitle>
+  <view class="video_info">
+    <video src="{{videoInfo.videoSrc}}" controls></video>
+    <view class="video_title">
+      <text>{{videoInfo.videoTitle}}</text>
+      <text class="fa fa-angle-down"></text>
+    </view>
+    <text class="author">{{videoInfo.author}}</text>
+    <text class="play_count">{{videoInfo.playCount}}</text>
+    <text class="comment_count">{{videoInfo.commentCount}}</text>
+    <text class="data">{{videoInfo.data}}</text>
+  </view>
+<view class="other_list">
+  <navigator wx:for="{{otherList}}" wx:key="{{index}}" class="item_other">
+  <view class="other_img_wrap">
+    <image src="{{item.imgSrc}}" mode="widthFix"></image>
+  </view>
+  <view class="other_info">
+  <view class="other_title">{{item.title}}</view>
+  <view class="other_detail">
+   <text class="play_count">{{item.playMsg}}次观看</text>
+   <text class="comment_count">{{item.commmentCount}}</text>
+  </view>
+</view>
+</navigator>
+</view>
+</view>
